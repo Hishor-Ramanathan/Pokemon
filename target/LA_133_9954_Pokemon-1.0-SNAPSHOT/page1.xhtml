@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <head>
+        <title>Page1</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <h:graphicImage value="#{helloManagedBean.getBild()}" alt="alt"></h:graphicImage>
+
+        <h:form>
+            <h:selectOneRadio value = "#{helloManagedBean.augen}" required="true"> 
+                <p>Wähle die Augenfarbe.</p>
+                <f:selectItem itemValue = "b" itemLabel = "blau" /> 
+                <f:selectItem itemValue = "g" itemLabel = "grün" />
+            </h:selectOneRadio>   
+            <h:commandButton value="Weiter" action="page2.xhtml"/>
+        </h:form>
+
+
+
+    </body>
+</html>
